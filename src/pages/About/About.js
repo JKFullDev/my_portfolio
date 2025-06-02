@@ -1,8 +1,13 @@
+import "./About.css";
+import { cleanPage } from "../../utils/cleanPage";
+
 export const About = () => {
-    return `
-    <section>
-      <h1>Sobre Mí</h1>
-      <p>Soy un apasionado del desarrollo web con experiencia en [tecnologías].</p>
-    </section>
-  `;
+  const main = document.querySelector("main");
+  cleanPage(main);
+  main.innerHTML = `
+    <section class="about">
+    <p>----------</p>
+    <h1>-----</h1>
+    <p>THIS SECTION IS ABOUT SECTION</p>
+    </section>`;
 };

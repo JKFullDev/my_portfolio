@@ -5,14 +5,36 @@ import { Divider } from './components/Divider/Divider';
 import { linkPage } from './utils/linkPage';
 import { Home } from './pages/Home/Home';
 import { Projects } from './pages/Projects/Projects';
+import { About } from './pages/About/About';
+import { currentLang, setLang } from './lang';
 
-document.querySelector('header').innerHTML = Navbar();
-document.querySelector('footer').innerHTML = Footer();
+// Función para pintar toda la app (para redibujar tras cambiar idioma)
+const renderApp = (initialPage) => {
+    document.querySelector('header').innerHTML = Navbar();
+    document.querySelector('footer').innerHTML = Footer();
 
-linkPage('#homelink', Home);
-linkPage('#projectslink', Projects);
+    // Reasigna eventos después de redibujar
+    linkPage('#homelink', Home);
+    linkPage('#projectslink', Projects);
+    linkPage('#aboutlink', About);
 
-Home();
-changeTheme();
+    // Página activa
+    initialPage();
 
-document.querySelector('footer').insertAdjacentHTML('beforebegin', Divider());
+    changeTheme();
+
+    // Eliminar Divider anterior y volver a insertar
+    document.querySelectorAll('.divider').forEach((el) => el.remove());
+    document.querySelector('footer').insertAdjacentHTML('beforebegin', Divider());
+
+    // Activar cambio de idioma
+    const langBtn = document.querySelector("#langBtn");
+    langBtn.addEventListener("click", () => {
+        const newLang = currentLang === "en" ? "es" : "en";
+        setLang(newLang);
+        renderApp(initialPage); // repinta todo con el idioma nuevo
+    });
+};
+
+// Ejecutar app con página por defecto
+renderApp(Home);

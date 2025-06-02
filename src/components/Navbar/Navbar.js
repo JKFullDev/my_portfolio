@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { t, currentLang } from "../../lang";
 
 export const changeTheme = () => {
     const themeBtn = document.querySelector("#themeBtn");
@@ -10,26 +11,30 @@ export const changeTheme = () => {
 
 export const changeText = () => {
     const themeBtn = document.querySelector("#themeBtn");
-    if (themeBtn.innerText === "☀") {
-        themeBtn.innerText = "☾";
-    } else {
-        themeBtn.innerText = "☀";
-    }
+    themeBtn.innerText = themeBtn.innerText === "☀" ? "☾" : "☀";
 };
+
+const getNextLangLabel = () => (currentLang === "en" ? "ES" : "EN");
 
 export const Navbar = () => `
 <nav>
-<h2>JKFullDev</h2>
-<ul>
+  <h2>JKFullDev</h2>
+  <ul>
     <li>
-        <a href="#" id="homelink">Home</a>
+      <a href="#" id="homelink">${t("navbar.home")}</a>
     </li>
     <li>
-        <a href="#" id="projectslink">Projects</a>
+      <a href="#" id="projectslink">${t("navbar.projects")}</a>
     </li>
     <li>
-        <button id="themeBtn">☀</button>
+      <a href="#" id="aboutlink">${t("navbar.contact")}</a>
     </li>
-</ul>
+    <li>
+      <button id="themeBtn">☀</button>
+    </li>
+    <li>
+      <button id="langBtn">${getNextLangLabel()}</button>
+    </li>
+  </ul>
 </nav>
 `;
