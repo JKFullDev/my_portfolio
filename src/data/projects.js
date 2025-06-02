@@ -1,9 +1,9 @@
 export const projects = [
   {
-    title: "Primer proyecto",
-    description: "Descripción...",
+    title: "Tienda de Cascos",
+    description: "Landing Page utilizando JavaScript en el DOM.",
     image: "/public/proyecto1.png",
-    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    tech: ["HTML5", "CSS3", "JavaScript"],
     github: "hhttps://github.com/JKFullDev/PracticaDOM-GaleriaDinamica",
     link: "https://motocard-helmets.netlify.app/",
   }
