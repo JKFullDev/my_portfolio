@@ -30,7 +30,7 @@ nav a {
 }
 
 #langBtn:hover {
-    color: #000;
+    color: var(--highlight);
 }
 
 nav a:hover,
