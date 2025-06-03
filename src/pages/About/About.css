@@ -1,11 +1,19 @@
 .about {
     padding: 0 8rem;
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
+}
+
+.about>p {
+    line-height: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 1.3rem;
+    text-align: justify;
 }
 
 .about>a {
@@ -20,7 +28,7 @@
 /* Móvil (320px–480px) */
 @media (max-width: 480px) {
     .about {
-        padding: 0 1rem;
+        padding: 0 8rem;
         gap: 2rem;
     }
 
@@ -32,7 +40,7 @@
 /* Móvil grande/Tablet vertical (481px–768px) */
 @media (max-width: 768px) {
     .about {
-        padding: 0 1.5rem;
+        padding: 0 8rem;
         gap: 2.5rem;
     }
 
@@ -44,6 +52,6 @@
 /* Portátil (769px–1024px) */
 @media (max-width: 1024px) {
     .about {
-        padding: 0 2rem;
+        padding: 0 8rem;
     }
 }

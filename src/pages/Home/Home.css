@@ -1,6 +1,6 @@
 .home {
     padding: 0 8rem;
-    min-height: 80vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,9 @@
     -webkit-text-fill-color: transparent;
 }
 
+.typewriter {
+    font-size: 2rem;
+}
 
 .home>a {
     font-size: 1.5rem;
@@ -30,6 +33,24 @@
 .home>p {
     line-height: 2rem;
     font-size: 1.1rem;
+}
+
+.typewriter::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 /* Móvil (320px–480px) */
@@ -69,7 +90,7 @@
 /* Portátil (769px–1024px) */
 @media (max-width: 1024px) {
     .home {
-        padding: 0 2rem;
+        padding: 0 8rem;
     }
 
     .home>h1 {

@@ -17,7 +17,7 @@ footer>div {
 /* Móvil (320px–480px) */
 @media (max-width: 480px) {
     footer {
-        padding: 0 1rem;
+        padding: 0 8rem;
         gap: 1rem;
         flex-direction: column;
         text-align: center;
@@ -31,7 +31,7 @@ footer>div {
 /* Móvil grande/Tablet vertical (481px–768px) */
 @media (max-width: 768px) {
     footer {
-        padding: 0 1.5rem;
+        padding: 0 8rem;
         gap: 1.5rem;
     }
 }
@@ -39,7 +39,7 @@ footer>div {
 /* Portátil (769px–1024px) */
 @media (max-width: 1024px) {
     footer {
-        padding: 0 2rem;
+        padding: 0 8rem;
         gap: 2rem;
     }
 }

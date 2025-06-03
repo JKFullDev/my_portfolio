@@ -18,7 +18,6 @@ const getNextLangLabel = () => (currentLang === "en" ? "ES" : "EN");
 
 export const Navbar = () => `
 <nav>
-  <h2>JKFullDev</h2>
   <ul>
     <li>
       <a href="#" id="homelink">${t("navbar.home")}</a>
@@ -29,6 +28,8 @@ export const Navbar = () => `
     <li>
       <a href="#" id="aboutlink">${t("navbar.about")}</a>
     </li>
+  </ul>
+  <ul>
     <li>
       <button id="themeBtn">☀</button>
     </li>
