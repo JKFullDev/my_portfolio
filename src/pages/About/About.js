@@ -7,9 +7,7 @@ export const About = () => {
   cleanPage(main);
   main.innerHTML = `
     <section class="about">
-      <div class="about-text">
-        <p>${t("about.description")}</p>
-      </div>
+      <p>${t("about.description")}</p>
       <div class="cv-preview">
         <a href="/CV-JuanCarlosAlonso.pdf" target="_blank" rel="noopener noreferrer" download>
           <img src="/cv-thumbnail.png" alt="Miniatura del currículum" class="cv-thumbnail" />
