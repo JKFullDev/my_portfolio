@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
     transform: scale(1.03);
-    /* agranda un poco */
 }
 
 .project-card img {
@@ -35,6 +35,10 @@
     transition: all 0.3s ease-in-out;
 }
 
+.light .project-card>.header>div>a>img {
+    filter: invert(10%);
+}
+
 .project-card>.header>div>a>img:hover {
     transform: scale(1.1);
 }
@@ -47,4 +51,27 @@
 
 .project-card>.detail>.tech {
     color: var(--highlight);
+}
+
+/* Móvil (320px–480px) */
+@media (max-width: 480px) {
+    .project-card img {
+        height: 150px;
+    }
+
+    .project-card>.header,
+    .project-card>.detail {
+        gap: 0.5rem;
+    }
+
+    .project-card>.header>div {
+        gap: 0.5rem;
+    }
+}
+
+/* Móvil grande/Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+    .project-card img {
+        height: 200px;
+    }
 }

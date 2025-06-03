@@ -11,6 +11,13 @@
     border-radius: 0.3rem;
     transition: all 0.5s ease-in-out;
     background-color: var(--bg-dark);
+    font-size: 1rem;
+    min-height: 44px;
+}
+
+.light .my-btn {
+    border: 1px solid var(--primary-light);
+    background-color: var(--bg-light);
 }
 
 .my-btn>img {
@@ -19,6 +26,28 @@
     filter: invert(95%);
 }
 
+.light .my-btn>img {
+    filter: invert(10%);
+}
+
 .my-btn:hover {
     background-color: var(--highlight);
+    border-color: var(--highlight);
+}
+
+/* Móvil (320px–480px) */
+@media (max-width: 480px) {
+    .my-btn {
+        width: 7rem;
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Móvil grande/Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+    .my-btn {
+        width: 8rem;
+        font-size: 0.95rem;
+    }
 }

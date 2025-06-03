@@ -1,19 +1,12 @@
 .about {
     padding: 0 8rem;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
 }
-
-@media (max-width: 700px) {
-    .about {
-        padding: 0 2rem;
-    }
-}
-
 
 .about>a {
     font-size: 1.5rem;
@@ -22,4 +15,35 @@
 .about>a:hover {
     color: var(--highlight);
     text-decoration: underline;
+}
+
+/* Móvil (320px–480px) */
+@media (max-width: 480px) {
+    .about {
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .about>a {
+        font-size: 1rem;
+    }
+}
+
+/* Móvil grande/Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+    .about {
+        padding: 0 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .about>a {
+        font-size: 1.05rem;
+    }
+}
+
+/* Portátil (769px–1024px) */
+@media (max-width: 1024px) {
+    .about {
+        padding: 0 2rem;
+    }
 }

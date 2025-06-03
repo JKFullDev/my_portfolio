@@ -23,10 +23,20 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.1rem;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 body {
@@ -40,18 +50,28 @@ body {
   color: var(--primary-light);
 }
 
-.light .home>h1 {
-  background: linear-gradient(to bottom right, #FFF8E7 0%, #f5c03a 50%, #ffe39d 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 main {
   min-height: 80vh;
 }
 
-a,
 p {
   font-size: 1.1rem;
+}
+
+/* Móvil (320px–480px) */
+@media (max-width: 480px) {
+
+  a,
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Móvil grande/Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+
+  a,
+  p {
+    font-size: 1.05rem;
+  }
 }

@@ -8,12 +8,6 @@
     margin-bottom: 2rem;
 }
 
-@media (max-width: 770px) {
-    .projects {
-        padding: 0 2rem;
-    }
-}
-
 .projects>h2 {
     font-weight: 100;
     text-transform: uppercase;
@@ -26,8 +20,38 @@
     gap: 8rem;
 }
 
-@media (max-width: 770px) {
+/* Móvil (320px–480px) */
+@media (max-width: 480px) {
+    .projects {
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
     .projects-container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Móvil grande/Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+    .projects {
+        padding: 0 1.5rem;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 4rem;
+    }
+}
+
+/* Portátil (769px–1024px) */
+@media (max-width: 1024px) {
+    .projects {
+        padding: 0 2rem;
+    }
+
+    .projects-container {
+        gap: 6rem;
     }
 }

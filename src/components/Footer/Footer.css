@@ -3,21 +3,43 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 8rem;
-
     gap: 4rem;
     flex-wrap: wrap;
     margin: 2rem 0;
-}
-
-@media (max-width: 770px) {
-    footer {
-        padding: 0 2rem;
-        gap: 2rem;
-    }
 }
 
 footer>div {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+/* Móvil (320px–480px) */
+@media (max-width: 480px) {
+    footer {
+        padding: 0 1rem;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer>div {
+        gap: 0.5rem;
+    }
+}
+
+/* Móvil grande/Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+    footer {
+        padding: 0 1.5rem;
+        gap: 1.5rem;
+    }
+}
+
+/* Portátil (769px–1024px) */
+@media (max-width: 1024px) {
+    footer {
+        padding: 0 2rem;
+        gap: 2rem;
+    }
 }

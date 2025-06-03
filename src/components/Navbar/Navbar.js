@@ -2,16 +2,16 @@ import "./Navbar.css";
 import { t, currentLang } from "../../lang";
 
 export const changeTheme = () => {
-    const themeBtn = document.querySelector("#themeBtn");
-    themeBtn.addEventListener("click", () => {
-        document.body.classList.toggle("light");
-        changeText();
-    });
+  const themeBtn = document.querySelector("#themeBtn");
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+    changeText();
+  });
 };
 
 export const changeText = () => {
-    const themeBtn = document.querySelector("#themeBtn");
-    themeBtn.innerText = themeBtn.innerText === "☀" ? "☾" : "☀";
+  const themeBtn = document.querySelector("#themeBtn");
+  themeBtn.innerText = themeBtn.innerText === "☀" ? "☾" : "☀";
 };
 
 const getNextLangLabel = () => (currentLang === "en" ? "ES" : "EN");
@@ -27,7 +27,7 @@ export const Navbar = () => `
       <a href="#" id="projectslink">${t("navbar.projects")}</a>
     </li>
     <li>
-      <a href="#" id="aboutlink">${t("navbar.contact")}</a>
+      <a href="#" id="aboutlink">${t("navbar.about")}</a>
     </li>
     <li>
       <button id="themeBtn">☀</button>

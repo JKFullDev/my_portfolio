@@ -4,7 +4,7 @@ export const projects = [
     description: "Landing Page utilizando JavaScript en el DOM.",
     image: "/public/proyecto1.png",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    github: "hhttps://github.com/JKFullDev/PracticaDOM-GaleriaDinamica",
+    github: "https://github.com/JKFullDev/PracticaDOM-GaleriaDinamica",
     link: "https://motocard-helmets.netlify.app/",
   }
 ];
