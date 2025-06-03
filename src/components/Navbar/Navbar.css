@@ -29,7 +29,7 @@ nav a {
 }
 
 #langBtn:hover {
-    color: var(--highlight);
+    color: #000;
 }
 
 nav a:hover,
@@ -40,9 +40,9 @@ nav a:hover,
 /* Móvil (320px–480px) */
 @media (max-width: 480px) {
     nav {
-        padding: 0rem 8rem;
-        height: auto;
-        flex-direction: column;
+        margin: 1rem 4rem 2rem 4rem;
+        flex-direction: row;
+        justify-content: center;
         gap: 1rem;
     }
 
@@ -64,9 +64,8 @@ nav a:hover,
 /* Móvil grande/Tablet vertical (481px–768px) */
 @media (max-width: 768px) {
     nav {
-        margin-top: 1rem;
-        padding: 0 8rem;
-        height: auto;
+        margin: 1rem 4rem 1rem 4rem;
+        padding: 2rem;
     }
 
     nav>ul {
@@ -82,7 +81,8 @@ nav a:hover,
 /* Portátil (769px–1024px) */
 @media (max-width: 1024px) {
     nav {
-        padding: 0 8rem;
+        margin: 0 4rem 6rem 4rem;
+        padding: 2rem;
     }
 
     nav>ul {

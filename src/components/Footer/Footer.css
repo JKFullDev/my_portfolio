@@ -14,10 +14,26 @@ footer>div {
     flex-wrap: wrap;
 }
 
+/* Portátil (769px–1024px) */
+@media (max-width: 1024px) {
+    footer {
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+}
+
+/* Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+    footer {
+        padding: 0 1.2rem;
+        gap: 1.5rem;
+    }
+}
+
 /* Móvil (320px–480px) */
 @media (max-width: 480px) {
     footer {
-        padding: 0 8rem;
+        padding: 0 1rem;
         gap: 1rem;
         flex-direction: column;
         text-align: center;
@@ -25,21 +41,6 @@ footer>div {
 
     footer>div {
         gap: 0.5rem;
-    }
-}
-
-/* Móvil grande/Tablet vertical (481px–768px) */
-@media (max-width: 768px) {
-    footer {
-        padding: 0 8rem;
-        gap: 1.5rem;
-    }
-}
-
-/* Portátil (769px–1024px) */
-@media (max-width: 1024px) {
-    footer {
-        padding: 0 8rem;
-        gap: 2rem;
+        justify-content: center;
     }
 }

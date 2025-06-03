@@ -7,10 +7,12 @@
     align-items: flex-start;
     gap: 3rem;
     text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .home>h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     background: linear-gradient(to bottom right, #1B263B 0%, #DAA520 50%, #2E2E2E 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -18,11 +20,11 @@
 }
 
 .typewriter {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .home>a {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .home>a:hover {
@@ -57,11 +59,12 @@
 @media (max-width: 480px) {
     .home {
         padding: 0 1rem;
-        gap: 2rem;
+        gap: 1.2rem;
     }
 
     .home>h1 {
-        font-size: 3rem;
+        font-size: 2.2rem;
+        word-break: break-word;
     }
 
     .home>p,
@@ -73,12 +76,12 @@
 /* Móvil grande/Tablet vertical (481px–768px) */
 @media (max-width: 768px) {
     .home {
-        padding: 0 1.5rem;
-        gap: 2.5rem;
+        padding: 0 1.2rem;
+        gap: 1.8rem;
     }
 
     .home>h1 {
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 
     .home>p,
@@ -90,10 +93,12 @@
 /* Portátil (769px–1024px) */
 @media (max-width: 1024px) {
     .home {
-        padding: 0 8rem;
+        margin: 0 4rem 0 4rem;
+        padding: 0 2rem;
+        gap: 2rem;
     }
 
     .home>h1 {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
     }
 }
