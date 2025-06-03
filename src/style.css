@@ -50,6 +50,14 @@ body {
   color: var(--primary-light);
 }
 
+.light .home>h1 {
+  background: linear-gradient(to bottom right, #ffdb86 0%, #f5c03a 50%, #ffe39d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 main {
   min-height: 80vh;
 }
