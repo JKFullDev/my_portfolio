@@ -6,6 +6,7 @@ nav {
     padding: 2rem 8rem;
     flex-wrap: wrap;
     margin-bottom: 6vh;
+    box-sizing: border-box;
 }
 
 nav>ul {
@@ -37,13 +38,45 @@ nav a:hover,
     color: var(--highlight);
 }
 
+/* Portátil (769px–1024px) */
+@media (max-width: 1024px) {
+    nav {
+        padding: 2rem 2rem;
+        margin-bottom: 4vh;
+    }
+
+    nav>ul {
+        gap: 2rem;
+    }
+}
+
+/* Tablet vertical (481px–768px) */
+@media (max-width: 768px) {
+    nav {
+        padding: 1.2rem 1.2rem;
+        margin-bottom: 3vh;
+    }
+
+    nav>ul {
+        gap: 1.5rem;
+    }
+
+    nav a,
+    nav button {
+        font-size: 1rem;
+        min-height: 40px;
+    }
+}
+
 /* Móvil (320px–480px) */
 @media (max-width: 480px) {
     nav {
-        margin: 1rem 4rem 2rem 4rem;
-        flex-direction: row;
+        padding: 0.5rem 0.5rem;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         gap: 1rem;
+        margin-bottom: 2vh;
     }
 
     nav>ul {
@@ -54,38 +87,7 @@ nav a:hover,
 
     nav a,
     nav button {
-        font-size: 0.9rem;
-        min-height: 40px;
-    }
-
-
-}
-
-/* Móvil grande/Tablet vertical (481px–768px) */
-@media (max-width: 768px) {
-    nav {
-        margin: 1rem 4rem 1rem 4rem;
-        padding: 2rem;
-    }
-
-    nav>ul {
-        gap: 1.5rem;
-    }
-
-    nav a,
-    nav button {
-        font-size: 1rem;
-    }
-}
-
-/* Portátil (769px–1024px) */
-@media (max-width: 1024px) {
-    nav {
-        margin: 0 4rem 6rem 4rem;
-        padding: 2rem;
-    }
-
-    nav>ul {
-        gap: 2rem;
+        font-size: 0.95rem;
+        min-height: 36px;
     }
 }
