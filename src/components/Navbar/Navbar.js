@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { t, currentLang } from "../../lang";
+import { t, currentLang } from "../../lang"; // Asegúrate de que sea 'lang'
 
 export const changeTheme = () => {
   const themeBtn = document.querySelector("#themeBtn");
@@ -27,6 +27,9 @@ export const Navbar = () => `
     </li>
     <li>
       <a href="#" id="aboutlink">${t("navbar.about")}</a>
+    </li>
+    <li>
+      <a href="#" id="skillslink">${t("navbar.skills")}</a> <!-- Usamos la traducción -->
     </li>
   </ul>
   <ul>

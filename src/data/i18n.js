@@ -6,6 +6,7 @@ export const translations = {
             home: "Home",
             projects: "Projects",
             about: "About",
+            skills: "Skills"
         },
         home: {
             position: "Full Stack Web Developer",
@@ -18,6 +19,29 @@ export const translations = {
             description: "Hey!<br> I'm a Full-Stack Developer based in Madrid. I've just completed my first year of a higher vocational degree in web development, and I'm passionate about building digital experiences—from simple websites to full-fledged applications. Although I'm at the beginning of my professional journey, I'm constantly learning and experimenting, and I'm excited about the projects ahead and everything I have yet to discover in this field.",
             cv: "Download my CV",
         },
+        skills: {
+            title: "My Skills",
+            categories: {
+                webDevelopment: "Web Development",
+                programming: "Programming",
+                databases: "Databases",
+                platforms: "Platforms",
+                frameworks: "Frameworks",
+                tools: "Tools",
+                ai: "Artificial Intelligence",
+                learning: "Learning",
+            },
+
+            skillsList: {
+                webDevelopment: ["HTML", "CSS", "JavaScript"], //relacionado con desarrollo web
+                programming: ["Java", "PHP"], //relacionado con programación
+                databases: ["phpMyAdmin", "MySQL", "MySQLWorkbench", "PostgreSQL", "pgAdmin4"], //relacionado con bases de datos
+                platforms: ["GitHub"], //relacionado con plataformas
+                frameworks: ["React"], //relacionado con frameworks
+                tools: ["VS Code", "Eclipse", "Xampp"], //relacionado con herramientas de desarrollo
+                ai: ["ChatGPT", "Grok", "DeepSeek", "Copilot"] //relacionado con inteligencia artificial
+            }
+        },
         footer: {
             contact: "Contact",
         },
@@ -28,6 +52,7 @@ export const translations = {
             home: "Inicio",
             projects: "Proyectos",
             about: "Sobre mi",
+            skills: "Habilidades"
         },
         home: {
             position: "Desarrollador Web Full Stack",
@@ -39,6 +64,30 @@ export const translations = {
         about: {
             description: "¡Hola! <br> Soy un Desarrollador Full-Stack de Madrid. Acabo de terminar mi primer año del Grado Superior en Desarrollo de Aplicaciones Web, y me apasiona crear experiencias digitales, desde webs sencillas hasta aplicaciones más completas. Aunque estoy dando mis primeros pasos en este mundo, siempre estoy aprendiendo y explorando nuevas ideas. Estoy entusiasmado con los proyectos que tengo por delante y todo lo que aún puedo descubrir.",
             cv: "Descarga mi CV",
+        },
+        skills: {
+            title: "Mis Habilidades",
+            categories: {
+                webDevelopment: "Desarrollo Web",
+                programming: "Programación",
+                databases: "Bases de Datos",
+                platforms: "Plataformas",
+                frameworks: "Frameworks",
+                tools: "Herramientas",
+                ai: "Inteligencia Artificial",
+                learning: "Aprendiendo"
+            },
+
+            skillsList: {
+                webDevelopment: ["HTML", "CSS", "JavaScript"], //relacionado con desarrollo web
+                programming: ["Java", "PHP"], //relacionado con programación
+                databases: ["phpMyAdmin", "MySQL", "MySQLWorkbench", "PostgreSQL", "pgAdmin4"], //relacionado con bases de datos
+                platforms: ["GitHub"], //relacionado con plataformas
+                frameworks: ["React"], //relacionado con frameworks
+                tools: ["VS Code", "Eclipse", "Xampp"], //relacionado con herramientas de desarrollo
+                ai: ["ChatGPT", "Grok", "DeepSeek", "Copilot"], //relacionado con inteligencia artificial
+
+            }
         },
         footer: {
             contact: "Contacto",

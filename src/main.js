@@ -7,14 +7,14 @@ import { Home } from './pages/Home/Home';
 import { Projects } from './pages/Projects/Projects';
 import { About } from './pages/About/About';
 import { Skills } from './pages/Skills/Skills';
-import { currentLang, setLang } from './lang'; // Asegúrate de que sea 'lang' y no 'i18n'
+import { currentLang, setLang } from './lang';
 import { initParticles } from './utils/particlesConfig';
 
 let currentPage = Home; // valor inicial
 
 // Función para pintar toda la app (para redibujar tras cambiar idioma)
 const renderApp = (initialPage) => {
-    document.querySelector('header').innerHTML = Navbar(); // Renderiza el navbar
+    document.querySelector('header').innerHTML = Navbar();
     document.querySelector('footer').innerHTML = Footer();
 
     linkPage('#homelink', () => {
