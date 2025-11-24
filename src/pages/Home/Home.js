@@ -12,7 +12,7 @@ export const Home = () => {
       <h1>Juan Carlos <br> Alonso Hernando</h1>
       <h2>
       ${Typewriter({ text: t("home.position"), speed: 50, pause: 4000 })}</h2>
-      <a href="mailto:juancarlosalonsohernando@gmail.com">${t("home.sayHi")}</a>
+      <a href="mailto:jcarlos.al.hr@gmail.com">${t("home.sayHi")}</a>
     </section>
   `;
 };
