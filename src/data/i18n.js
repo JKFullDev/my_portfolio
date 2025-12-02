@@ -1,5 +1,3 @@
-import { projects } from "./projects";
-
 export const translations = {
     en: {
         navbar: {
@@ -15,15 +13,15 @@ export const translations = {
 
         projects: {
             title: "Featured projects",
-            p1: {
-                title: "Motorbike helmet Store",
+            project1: {
+                title: "Moto Helmet",
                 description: "Web store simulation with functional filters.",
             },
-            p2: {
+            project2: {
                 title: "Pentirist",
                 description: "Pinterest-based application using Unsplash API.",
             },
-            p3: {
+            project3: {
                 title: "Golden Giggle",
                 description: "Online store for gold and silver ingots with real prices obtained from an external API.",
             },
@@ -46,13 +44,13 @@ export const translations = {
             },
 
             skillsList: {
-                webDevelopment: ["HTML", "CSS", "JavaScript"], //relacionado con desarrollo web
-                programming: ["Java", "PHP"], //relacionado con programación
-                databases: ["phpMyAdmin", "MySQL", "MySQLWorkbench", "PostgreSQL", "pgAdmin4"], //relacionado con bases de datos
-                platforms: ["GitHub"], //relacionado con plataformas
-                frameworks: ["React"], //relacionado con frameworks
-                tools: ["VS Code", "Eclipse", "Xampp"], //relacionado con herramientas de desarrollo
-                ai: ["ChatGPT", "Grok", "DeepSeek", "Copilot"] //relacionado con inteligencia artificial
+                webDevelopment: ["HTML", "CSS", "JavaScript"],
+                programming: ["Java", "PHP"],
+                databases: ["phpMyAdmin", "MySQL", "MySQLWorkbench", "PostgreSQL", "pgAdmin4"],
+                platforms: ["GitHub"],
+                frameworks: ["React"],
+                tools: ["VS Code", "Eclipse", "Xampp"],
+                ai: ["ChatGPT", "Grok", "DeepSeek", "Copilot"]
             }
         },
         footer: {
@@ -73,15 +71,15 @@ export const translations = {
         },
         projects: {
             title: "Proyectos Destacados",
-            p1: {
-                title: "Tienda de cascos de moto",
+            project1: {
+                title: "Moto Helmet",
                 description: "Simulación tienda web con filtros funcionales.",
             },
-            p2: {
+            project2: {
                 title: "Pentirist",
                 description: "Aplicación basada en Pinterest usando API de Unsplash.",
             },
-            p3: {
+            project3: {
                 title: "Golden Giggle",
                 description: "Tienda online de lingotes de oro y plata con precios reales obtenidos de API externa.",
             },
@@ -104,14 +102,13 @@ export const translations = {
             },
 
             skillsList: {
-                webDevelopment: ["HTML", "CSS", "JavaScript"], //relacionado con desarrollo web
-                programming: ["Java", "PHP"], //relacionado con programación
-                databases: ["phpMyAdmin", "MySQL", "MySQLWorkbench", "PostgreSQL", "pgAdmin4"], //relacionado con bases de datos
-                platforms: ["GitHub"], //relacionado con plataformas
-                frameworks: ["React"], //relacionado con frameworks
-                tools: ["VS Code", "Eclipse", "Xampp"], //relacionado con herramientas de desarrollo
-                ai: ["ChatGPT", "Grok", "DeepSeek", "Copilot"], //relacionado con inteligencia artificial
-
+                webDevelopment: ["HTML", "CSS", "JavaScript"],
+                programming: ["Java", "PHP"],
+                databases: ["phpMyAdmin", "MySQL", "MySQLWorkbench", "PostgreSQL", "pgAdmin4"],
+                platforms: ["GitHub"],
+                frameworks: ["React"],
+                tools: ["VS Code", "Eclipse", "Xampp"],
+                ai: ["ChatGPT", "Grok", "DeepSeek", "Copilot"],
             }
         },
         footer: {

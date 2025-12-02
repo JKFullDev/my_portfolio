@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
+  --header-height: 120px;
+  /* ajusta según tu header */
   --primary-dark: whitesmoke;
   --bg-dark: #111111;
   --primary-light: #111111;
@@ -39,6 +41,17 @@ html {
   z-index: -1;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  z-index: 1000;
+  background: inherit;
+  /* si quieres color propio, cámbialo aquí */
+}
+
 body {
   background-color: var(--bg-dark);
   color: var(--primary-dark);
@@ -59,7 +72,8 @@ body {
 
 
 main {
-  min-height: 80vh;
+  padding-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
 }
 
 p {

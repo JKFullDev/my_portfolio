@@ -4,7 +4,7 @@ export const ProjectCard = (project) => `
 <div class="project-card">
 <img src=${project.image} alt=${project.title}/>
 <div class="header">
-<h2>${project.title}</h2>
+<h3>${project.title}</h3>
 <div>
 <a href=${project.github}>
 <img src="/icons/github.png" alt="GitHub Icon" />
