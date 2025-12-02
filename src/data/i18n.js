@@ -12,8 +12,21 @@ export const translations = {
             position: "Full Stack Web Developer",
             sayHi: "Say hi →",
         },
+
         projects: {
-            title: "Featured Projects",
+            title: "Featured projects",
+            p1: {
+                title: "Motorbike helmet Store",
+                description: "Web store simulation with functional filters.",
+            },
+            p2: {
+                title: "Pentirist",
+                description: "Pinterest-based application using Unsplash API.",
+            },
+            p3: {
+                title: "Golden Giggle",
+                description: "Online store for gold and silver ingots with real prices obtained from an external API.",
+            },
         },
         about: {
             description: "Hey!<br> I'm a Full-Stack Developer based in Madrid. I've just completed my first year of a higher vocational degree in web development, and I'm passionate about building digital experiences—from simple websites to full-fledged applications. Although I'm at the beginning of my professional journey, I'm constantly learning and experimenting, and I'm excited about the projects ahead and everything I have yet to discover in this field.",
@@ -60,6 +73,18 @@ export const translations = {
         },
         projects: {
             title: "Proyectos Destacados",
+            p1: {
+                title: "Tienda de cascos de moto",
+                description: "Simulación tienda web con filtros funcionales.",
+            },
+            p2: {
+                title: "Pentirist",
+                description: "Aplicación basada en Pinterest usando API de Unsplash.",
+            },
+            p3: {
+                title: "Golden Giggle",
+                description: "Tienda online de lingotes de oro y plata con precios reales obtenidos de API externa.",
+            },
         },
         about: {
             description: "¡Hola! <br> Soy un Desarrollador Full-Stack de Madrid. Acabo de terminar mi primer año del Grado Superior en Desarrollo de Aplicaciones Web, y me apasiona crear experiencias digitales, desde webs sencillas hasta aplicaciones más completas. Aunque estoy dando mis primeros pasos en este mundo, siempre estoy aprendiendo y explorando nuevas ideas. Estoy entusiasmado con los proyectos que tengo por delante y todo lo que aún puedo descubrir.",
