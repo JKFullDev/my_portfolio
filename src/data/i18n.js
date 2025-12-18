@@ -25,6 +25,10 @@ export const translations = {
                 title: "Golden Giggle",
                 description: "Online store for gold and silver ingots with real prices obtained from an external API.",
             },
+            project4: {
+                title: "Blog de Videojuegos",
+                description: "Blog de Videojuegos.",
+            },
         },
         about: {
             description: "Hey!<br> I'm a Full-Stack Developer based in Madrid. I've just completed my first year of a higher vocational degree in web development, and I'm passionate about building digital experiences—from simple websites to full-fledged applications. Although I'm at the beginning of my professional journey, I'm constantly learning and experimenting, and I'm excited about the projects ahead and everything I have yet to discover in this field.",
@@ -82,6 +86,10 @@ export const translations = {
             project3: {
                 title: "Golden Giggle",
                 description: "Tienda online de lingotes de oro y plata con precios reales obtenidos de API externa.",
+            },
+            project4: {
+                title: "Blog de Videojuegos",
+                description: "Blog de Videojuegos.",
             },
         },
         about: {

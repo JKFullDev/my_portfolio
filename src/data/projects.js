@@ -25,4 +25,14 @@ export const getProjects = () => [
     github: "https://golden-giggle.vercel.app/",
     link: "https://golden-giggle.vercel.app/#home",
   },
+  {
+    title: t("projects.project4.title"),
+    description: t("projects.project4.description"),
+    image: "/proyecto4.png",
+    tech: ["PHP, HTML5", "CSS3"],
+    github: "https://github.com/JKFullDev/blog-videojuegos",
+    link: "https://blog-videojuegos.infinityfreeapp.com/",
+  },
 ];
+
+
